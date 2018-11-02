@@ -17,6 +17,8 @@ vendor
 
 go.sum
 
+video
+
 vendor
 /videos/*
 !/videos/.keep
