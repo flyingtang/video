@@ -1,4 +1,4 @@
-package main
+package handlers
 
 import (
 	"log"
@@ -9,7 +9,7 @@ type ConnLimiter struct {
 	bucket chan int
 }
 
-func newConnLimiter(cc int) *ConnLimiter {
+func NewConnLimiter(cc int) *ConnLimiter {
 	return &ConnLimiter{
 		max:    cc,
 		bucket: make(chan int, cc),
